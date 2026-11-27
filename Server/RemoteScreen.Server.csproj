@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>RemoteScreen.Server</RootNamespace>
+    <AssemblyName>RemoteScreen</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <StartupObject>RemoteScreen.Server.Entry</StartupObject>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <RollForward>Major</RollForward>
+    <!-- při publikování: dotnet publish -c Release -r osx-arm64 (Apple Silicon) nebo osx-x64 (Intel) -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\RemoteScreen.Shared.csproj" />
+    <ProjectReference Include="..\Host\RemoteScreen.Host.csproj" />
+    <Using Include="RemoteScreen.Host" />
+  </ItemGroup>
+
+</Project>

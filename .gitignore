@@ -1,0 +1,20 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/
+*.nupkg
+publish/
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# instalátor a sestavené balíčky
+*.app/
+*.dmg
+*.zip
+installer/Output/
