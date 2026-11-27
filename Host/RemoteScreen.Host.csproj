@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Společné jádro serveru (sdílení obrazovky): spojení, přihlášení, soubory, terminál.
+       Části závislé na systému dodává IHostPlatform (Mac: Server/MacPlatform, Windows: Client/Host/WinPlatform). -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>RemoteScreen.Host</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\RemoteScreen.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

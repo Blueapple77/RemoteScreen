@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>RemoteScreen.Client</RootNamespace>
+    <AssemblyName>RemoteScreen</AssemblyName>
+    <ApplicationIcon>RemoteScreen.ico</ApplicationIcon>
+    <Version>3.6.4</Version>
+    <Product>RemoteScreen</Product>
+    <AssemblyTitle>RemoteScreen – ovládání Macu</AssemblyTitle>
+    <RollForward>Major</RollForward>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <!-- tmavý režim WinForms je v .NET 9 experimentální -->
+    <NoWarn>$(NoWarn);WFO5001;WFO1000</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="RemoteScreen.ico" LogicalName="RemoteScreen.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\RemoteScreen.Shared.csproj" />
+    <ProjectReference Include="..\Host\RemoteScreen.Host.csproj" />
+  </ItemGroup>
+
+</Project>

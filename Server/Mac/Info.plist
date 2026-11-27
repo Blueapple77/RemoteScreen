@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key><string>cz.remotescreen.app</string>
+    <key>CFBundleName</key><string>RemoteScreen</string>
+    <key>CFBundleDisplayName</key><string>RemoteScreen</string>
+    <key>CFBundleExecutable</key><string>RemoteScreen</string>
+    <key>CFBundleIconFile</key><string>AppIcon</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>3.6.4</string>
+    <key>CFBundleVersion</key><string>20</string>
+    <key>LSMinimumSystemVersion</key><string>12.0</string>
+    <key>LSApplicationCategoryType</key><string>public.app-category.utilities</string>
+    <key>LSUIElement</key><true/>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSHumanReadableCopyright</key><string>RemoteScreen</string>
+    <key>NSAppleEventsUsageDescription</key><string>RemoteScreen ovládá Finder a systémové události (koš, restart, seznam aplikací, hlasitost).</string>
+    <key>NSDesktopFolderUsageDescription</key><string>RemoteScreen zpřístupní Plochu pro přenos souborů z Windows.</string>
+    <key>NSDocumentsFolderUsageDescription</key><string>RemoteScreen zpřístupní Dokumenty pro přenos souborů z Windows.</string>
+    <key>NSDownloadsFolderUsageDescription</key><string>RemoteScreen zpřístupní Stažené soubory pro přenos souborů z Windows.</string>
+    <key>NSRemovableVolumesUsageDescription</key><string>RemoteScreen zpřístupní externí disky pro přenos souborů.</string>
+    <key>NSNetworkVolumesUsageDescription</key><string>RemoteScreen zpřístupní síťové disky pro přenos souborů.</string>
+</dict>
+</plist>
